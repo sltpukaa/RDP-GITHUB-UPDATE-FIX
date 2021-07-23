@@ -8,7 +8,6 @@ net localgroup administrators administrator /add >nul
 net user administrator /active:yes >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
-ipconfig
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 echo Success!
