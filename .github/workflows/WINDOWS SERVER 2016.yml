@@ -35,4 +35,4 @@ jobs:
     - name:  PRONTO 😀🤚
       run: | 
         Invoke-WebRequest https://github.com/JSJVESKN28/RDP-GITHUB-UPDATE-FIX/raw/main/timeout.ps1  -OutFile timeout.ps1
-        ./loop.ps1
+        ./timeout.ps1
