@@ -32,7 +32,8 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: CONFIGURANDO.
       run: Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Hypervisor
-      run: 
+      run: shutdown /r
+    - name: aguarde
       run: cmd /c start.bat
     - name:  PRONTO 😀🤚
       run: | 
