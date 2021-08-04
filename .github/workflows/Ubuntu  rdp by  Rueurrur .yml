@@ -2,14 +2,12 @@ name: UBUNTU 20.04
 
 on:
 
-  push:
-
   jobs:
     runs-on: ubuntu-20.04
 
     -uses: actions/checkout@v2
       
-      - name: Update
+     - name: Update
       run: sudo apt update -y && sudo apt upgrade -y
 
       - name: Instalando o ubuntu desktop
