@@ -25,7 +25,4 @@ jobs:
          echo xfce4-session >~/.xsession
          sudo service xrdp start
          sudo ./ngrok authtoken "${{ secrets.NGROK_AUTH_TOKEN }}"
-
-         - name: Abrindo Porta 3389
-         run: |
          sudo ./ngrok tcp 3389
