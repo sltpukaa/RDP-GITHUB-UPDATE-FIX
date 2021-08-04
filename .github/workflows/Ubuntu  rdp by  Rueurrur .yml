@@ -8,9 +8,7 @@ jobs:
 
     runs-on: Ubuntu.20.04
 
-    -uses: actions/checkout@v2
 
-    
     steps:
     - name: sudo update
       run: sudo apt update -y && sudo apt upgrade -y
