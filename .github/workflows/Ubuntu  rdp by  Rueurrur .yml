@@ -14,8 +14,6 @@ jobs:
       run: sudo apt update -y && sudo apt upgrade -y
     - name: instalando Ubuntu desktop
       run: |
-        sudo useradd -m expedito && sudo adduser expedit sudo && echo 'expedito:expedit' | sudo chpasswd
-        
         sudo apt install ubuntu-desktop xfce4 xrdp -y
 
     - name: configurando
