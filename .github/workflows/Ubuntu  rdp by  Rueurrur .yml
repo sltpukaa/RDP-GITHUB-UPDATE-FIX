@@ -1,8 +1,11 @@
-name: UBUNTU 20.04
+name: WINDOWS SERVER 2016
 
-on:
+on: workflow_dispatch
 
-  jobs:
+jobs:
+  build:
+  
+
     runs-on: ubuntu-20.04
 
     -uses: actions/checkout@v2
