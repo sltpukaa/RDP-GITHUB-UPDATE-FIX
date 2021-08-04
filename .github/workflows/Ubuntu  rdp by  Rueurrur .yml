@@ -7,7 +7,9 @@ jobs:
   
 
     runs-on: Ubuntu.20.04
-    timeout-minutes: 99999999999
+
+    -uses: actions/checkout@v2
+
     
     steps:
     - name: Download Ngrok
